@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService.csproj": {}
+    "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService\\PlatformService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService.csproj": {
+    "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService\\PlatformService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService.csproj",
+        "projectUniqueName": "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService\\PlatformService.csproj",
         "projectName": "PlatformService",
-        "projectPath": "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService.csproj",
+        "projectPath": "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService\\PlatformService.csproj",
         "packagesPath": "C:\\Users\\SandrineMang'ong'oMa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\obj\\",
+        "outputPath": "C:\\Users\\SandrineMang'ong'oMa\\Documents\\Codes\\PlatformService\\PlatformService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SandrineMang'ong'oMa\\AppData\\Roaming\\NuGet\\NuGet.Config",
