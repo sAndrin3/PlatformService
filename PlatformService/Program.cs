@@ -10,9 +10,26 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseInMemoryDatabase("InMem"));
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
+
+// var env = builder.Environment;  
+// var configuration = builder.Configuration;
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+    if (builder.Environment.IsProduction())
+    {
+        Console.WriteLine("--> Using  SqlServer dB");
+        options.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn"));
+    }
+    else
+    {
+        Console.WriteLine("--> Using InMem dB");
+        options.UseInMemoryDatabase("InMem");
+    }
+});
+
 
 var app = builder.Build();
 
@@ -28,10 +45,11 @@ app.UseRouting();
 app.UseAuthorization();
 app.MapControllers();
 
-var configuration = app.Services.GetRequiredService<IConfiguration>();
-Console.WriteLine($"---> CommandService Endpoint {configuration["CommandService"]}");
 
-PrepDb.PrepPopulation(app);
+Console.WriteLine($"---> Environment: {builder.Environment.EnvironmentName}");
+Console.WriteLine($"---> CommandService Endpoint {builder.Configuration["CommandService"]}");
+
+PrepDb.PrepPopulation(app, builder.Environment.IsProduction());
 
 
 
