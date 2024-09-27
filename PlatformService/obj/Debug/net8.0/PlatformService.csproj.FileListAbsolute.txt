@@ -281,3 +281,4 @@ C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\PlatformService\ob
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\PlatformService\obj\Debug\net8.0\ref\PlatformService.dll
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\PlatformService\bin\Debug\net8.0\appsettings.Production.json
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\PlatformService\obj\Debug\net8.0\Platform.C7468C4A.Up2Date
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\PlatformService\bin\Debug\net8.0\RabbitMQ.Client.dll
