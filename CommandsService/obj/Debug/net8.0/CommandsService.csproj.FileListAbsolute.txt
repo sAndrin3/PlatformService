@@ -105,3 +105,5 @@ C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\ob
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\obj\Debug\net8.0\CommandsService.genruntimeconfig.cache
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\obj\Debug\net8.0\ref\CommandsService.dll
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\obj\Debug\net8.0\Commands.3E373DDD.Up2Date
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\RabbitMQ.Client.dll
