@@ -12,9 +12,9 @@ namespace CommandsService.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        public int HowTo { get; set; }
+        public string HowTo { get; set; }
         [Required]
-        public int CommandLine { get; set; }
+        public string CommandLine { get; set; }
         [Required]
         public int PlatformId { get; set; }
         public Platform Platform {get; set;}
