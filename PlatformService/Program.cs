@@ -1,6 +1,8 @@
+using System.Net;
 using Microsoft.EntityFrameworkCore;
 using PlatformService.AsyncDataServices;
 using PlatformService.Data;
+using PlatformService.SyncDataServices.Grpc;
 using PlatformService.SyncDataServices.Http;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,19 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
+builder.Services.AddGrpc();
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.Listen(IPAddress.Any, 5135);
+    
+    if (builder.Environment.IsDevelopment())
+    {
+        serverOptions.Listen(IPAddress.Any, 7127, listenOptions =>
+        {
+            listenOptions.UseHttps(); 
+        });
+    }
+});
 
 // var env = builder.Environment;  
 // var configuration = builder.Configuration;
@@ -46,6 +61,11 @@ app.UseHttpsRedirection();
 app.UseRouting();  
 app.UseAuthorization();
 app.MapControllers();
+app.MapGrpcService<GrpcPlatformService>();
+app.MapGet("/protos/platforms.proto", async context => 
+{
+    await context.Response.WriteAsync(File.ReadAllText("Protos/platforms.proto"));
+});
 
 
 Console.WriteLine($"---> Environment: {builder.Environment.EnvironmentName}");

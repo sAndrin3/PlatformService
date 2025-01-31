@@ -110,3 +110,7 @@ C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bi
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\CommandsService.staticwebassets.endpoints.json
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\obj\Debug\net8.0\staticwebassets\msbuild.CommandsService.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\SandrineMang'ong'oMa\Documents\Codes\PlatformService\CommandsService\bin\Debug\net8.0\Grpc.Net.Common.dll
